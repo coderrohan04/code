@@ -14,9 +14,7 @@ public class to_insert_elament {
                 largest=arr[i];
                 index=i;
             }
-
         }
-
         System.out.println(index+1);
     }
 }
