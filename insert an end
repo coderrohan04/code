@@ -18,6 +18,5 @@ public class to_insert_elament {
         }
 
         System.out.println(index+1);
-
     }
 }
