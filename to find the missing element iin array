@@ -1,0 +1,14 @@
+class Solution {
+    int missingNumber(int arr[], int N) {
+      int expectedSum = N * (N + 1) / 2;
+        
+        // Calculate the actual sum of the elements in the array
+        int actualSum = 0;
+        for (int num : arr) {
+            actualSum += num;
+        }
+        
+        // The missing number is the difference between the expected sum and the actual sum
+        return expectedSum - actualSum;
+    }
+    }
