@@ -8,3 +8,4 @@ class Solution {
         return expectedSum - actualSum;
     }
     }
+in this we have to find the missing element in any array
