@@ -1,0 +1,23 @@
+ class Solution {
+
+    // Function to insert the element at its correct position
+    public void insert(int[] arr, int n, int i) {
+        int current = arr[i];  // Define the current element to be inserted
+        int j = i - 1;
+
+        // Move elements of arr[0..i-1], that are greater than current,
+        // to one position ahead of their current position
+        while (j >= 0 && arr[j] > current) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = current;  // Place the current element in its correct position
+    }
+
+    // Function to perform insertion sort using the insert function
+    public void insertionSort(int[] arr, int n) {
+        for (int i = 1; i < n; i++) {
+            insert(arr, n, i);
+        }
+    }
+}
