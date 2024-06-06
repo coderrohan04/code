@@ -1,0 +1,17 @@
+class Solution {
+    int findMaximum(int[] arr, int n) {
+        // code here
+                if (n == 0) {
+            throw new IllegalArgumentException("Array is empty");
+        }
+
+        int max = arr[0];  // Initialize max as the first element
+        for (int i = 1; i < n; i++) {
+            if (arr[i] > max) {
+                max = arr[i];  // Update max if the current element is greater
+            }
+        }
+        return max;  // Return the maximum element
+
+    }
+}
